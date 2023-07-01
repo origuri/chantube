@@ -1,0 +1,28 @@
+{
+  "name": "chantube",
+  "version": "1.0.0",
+  "description": "the first node.js project! ",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/origuri/chantube.git"
+  },
+  "scripts": {
+    "dev": "nodemon --exec babel-node index.js"
+  },
+  "author": "chan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/origuri/chantube/issues"
+  },
+  "homepage": "https://github.com/origuri/chantube#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/node": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "nodemon": "^2.0.22"
+  }
+}
