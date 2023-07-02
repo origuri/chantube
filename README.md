@@ -8,13 +8,15 @@
 
 
 // users 라우터
-/users/edit -> 프로필 수정
-/users/delete -> 프로필 삭제
+/users/:id -> 다른사람 프로필보기
+/users/logout -> 로그아웃
+/users/edit -> 내 프로필 수정
+/users/delete ->내 프로필 삭제
 
 //videos 라우터
-/videos/watch -> 동영상보는 곳
-/videos/edit -> 동영상 수정
-/videos/delete -> 동영상 삭제
-/videos/comments -> 동영상에 댓글달기
-/videos/comments/delete -> 동영상 댓글 삭제
+/videos/:id -> 동영상보는 곳
+/videos/:id/edit -> 동영상 수정
+/videos/:id/delete -> 동영상 삭제
+/videos/upload - > 비디오 업로드
+
 

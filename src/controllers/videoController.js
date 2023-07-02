@@ -1,5 +1,12 @@
-export const tranding = (req, res) => res.send("homepage");
-export const watch = (req, res) => res.send("watch");
-export const edit = (req, res) => res.send("video edit");
+// 글로벌
+export const tranding = (req, res) => res.render("home", {pageTitle:"Home"});
+
+export const search = (req, res) => res.send("동영상 검색");
+
+// 비디오라우터 
+export const see = (req, res) => res.render("watch", {pageTitle:"Watch"});
+export const edit = (req, res) => res.render("edit", {pageTitle:"Edit"});
+export const remove = (req, res) => res.send("동영상 삭제");
+export const upload = (req, res) => res.send("동영상 업로드");
 
 
