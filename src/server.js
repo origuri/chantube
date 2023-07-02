@@ -7,9 +7,10 @@ import videoRouter from "./routers/videoRouter";
 // express로 앱을 만들기 위한 첫번째 약속 변수 명은 app이라고 할 것 
 const app = express();
 const logger = morgan("dev");
+
+app.set("view engine", "pug");
+app.set("views", process.cwd()+"/src/views")
 app.use(logger)
-
-
 app.use("/", globalRouter);
 app.use("/videos", videoRouter);
 app.use("/users", userRouter);
