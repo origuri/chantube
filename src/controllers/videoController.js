@@ -1,5 +1,10 @@
+const fakeUser = {
+    username : "chan",
+    loggedIn : true ,
+}
+
 // 글로벌
-export const tranding = (req, res) => res.render("home", {pageTitle:"Home"});
+export const tranding = (req, res) => res.render("home", {pageTitle:"Home", fakeUser});
 
 export const search = (req, res) => res.send("동영상 검색");
 
