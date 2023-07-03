@@ -1,4 +1,9 @@
 extends base.pug
+include mixins/video.pug
 
 block content  
     h2 환영합니다. 최신 인기 동영상을 만나보세요!
+    each item in videos 
+        +video(item) 
+    else   
+        li 첫번째 동영상을 올려보세요~!
