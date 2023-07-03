@@ -1,4 +1,6 @@
 extends base.pug
+include mixins/video.pug
 
 block content 
-    h1 동영상 보자 
+    h3 #{video.views} #{video.views === 1 ? "view" : "views"}
+    a(href=`${video.id}/edit`) edit video &rarr; 
